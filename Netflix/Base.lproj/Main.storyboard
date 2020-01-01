@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="Xo9-5N-iRS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15702"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="Netflix" id="1Xt-HY-uBw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Netflix" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem title="About Netflix" id="5kV-Vb-QxS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                                        <menuItem title="Quit Netflix" keyEquivalent="q" id="4sb-4s-VLi">
+                                            <connections>
+                                                <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Help" id="wpr-3q-Mcd">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
+                                    <items>
+                                        <menuItem title="Netflix Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                            <connections>
+                                                <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Netflix" customModuleProvider="target"/>
+                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="0.0"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="Qda-30-QHs">
+            <objects>
+                <windowController id="Xo9-5N-iRS" customClass="WindowController" customModule="Netflix" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Amazon Prime Video" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" appearanceType="darkAqua" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" id="VJJ-yU-DvE">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+                        <connections>
+                            <outlet property="delegate" destination="Xo9-5N-iRS" id="nUt-qs-PyY"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="V93-qT-d6B" kind="relationship" relationship="window.shadowedContentViewController" id="EmE-4K-Rwz"/>
+                    </connections>
+                </windowController>
+                <customObject id="iQJ-yw-l9k" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93" y="266"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Cta-Az-N7s">
+            <objects>
+                <viewController id="V93-qT-d6B" customClass="ViewController" customModule="Netflix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="CLa-Lc-36a" customClass="ViewControllerView" customModule="Netflix" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <visualEffectView wantsLayer="YES" appearanceType="inheritedVibrantDark" blendingMode="withinWindow" material="headerView" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="uen-5P-fLb" customClass="TitleView" customModule="Netflix" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="248" width="480" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="3qE-o8-TTj"/>
+                                    <constraint firstAttribute="height" constant="22" id="LGS-gF-fiz"/>
+                                </constraints>
+                            </visualEffectView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="yvh-qb-yYj" customClass="ActivityIndicator" customModule="Netflix" customModuleProvider="target">
+                                <rect key="frame" x="223" y="126" width="34" height="18"/>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="yvh-qb-yYj" firstAttribute="centerX" secondItem="CLa-Lc-36a" secondAttribute="centerX" id="0nf-jo-KtI"/>
+                            <constraint firstItem="uen-5P-fLb" firstAttribute="leading" secondItem="CLa-Lc-36a" secondAttribute="leading" id="IAc-Dk-5A8"/>
+                            <constraint firstItem="yvh-qb-yYj" firstAttribute="centerY" secondItem="CLa-Lc-36a" secondAttribute="centerY" id="SCj-An-Gcn"/>
+                            <constraint firstItem="yvh-qb-yYj" firstAttribute="height" secondItem="CLa-Lc-36a" secondAttribute="height" multiplier="0.07" id="TQg-aH-2Sg"/>
+                            <constraint firstItem="yvh-qb-yYj" firstAttribute="width" secondItem="CLa-Lc-36a" secondAttribute="width" multiplier="0.07" id="XF2-WP-nDE"/>
+                            <constraint firstAttribute="trailing" secondItem="uen-5P-fLb" secondAttribute="trailing" id="Y9A-J1-Dyx"/>
+                            <constraint firstItem="uen-5P-fLb" firstAttribute="top" secondItem="CLa-Lc-36a" secondAttribute="top" id="a7c-RF-7ZY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="yvh-qb-yYj" id="udw-GR-Twi"/>
+                        <outlet property="titleView" destination="uen-5P-fLb" id="VQx-dC-waF"/>
+                    </connections>
+                </viewController>
+                <customObject id="NUt-fn-0BX" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93" y="729"/>
+        </scene>
+    </scenes>
+</document>
