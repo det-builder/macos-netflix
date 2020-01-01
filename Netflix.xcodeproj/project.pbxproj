@@ -20,23 +20,6 @@
 		55FD04AB23AAFAEC00707000 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FD04AA23AAFAEC00707000 /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		55C91D4A23AAF7A6001A8249 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 55C91D2C23AAF7A5001A8249 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 55C91D3323AAF7A5001A8249;
-			remoteInfo = Netflix;
-		};
-		55C91D5523AAF7A6001A8249 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 55C91D2C23AAF7A5001A8249 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 55C91D3323AAF7A5001A8249;
-			remoteInfo = Netflix;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		5516A7B823AF06BE00297B00 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -60,8 +43,6 @@
 		55C91D4123AAF7A5001A8249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55C91D4323AAF7A5001A8249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55C91D4423AAF7A5001A8249 /* Netflix.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Netflix.entitlements; sourceTree = "<group>"; };
-		55C91D4F23AAF7A6001A8249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		55C91D5A23AAF7A6001A8249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55FD04A023AAF8FF00707000 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Netflix/Supporting_Files/Sparkle.framework; sourceTree = "<group>"; };
 		55FD04A423AAFA9000707000 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		55FD04A623AAFAAC00707000 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
@@ -75,20 +56,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5516A7B623AF06BE00297B00 /* Sparkle.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		55C91D4623AAF7A6001A8249 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		55C91D5123AAF7A6001A8249 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,14 +147,6 @@
 					55C91D3323AAF7A5001A8249 = {
 						CreatedOnToolsVersion = 11.3;
 					};
-					55C91D4823AAF7A6001A8249 = {
-						CreatedOnToolsVersion = 11.3;
-						TestTargetID = 55C91D3323AAF7A5001A8249;
-					};
-					55C91D5323AAF7A6001A8249 = {
-						CreatedOnToolsVersion = 11.3;
-						TestTargetID = 55C91D3323AAF7A5001A8249;
-					};
 				};
 			};
 			buildConfigurationList = 55C91D2F23AAF7A5001A8249 /* Build configuration list for PBXProject "Netflix" */;
@@ -203,7 +162,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				55C91D3323AAF7A5001A8249 /* Netflix */
+				55C91D3323AAF7A5001A8249 /* Netflix */,
 			);
 		};
 /* End PBXProject section */
@@ -217,20 +176,6 @@
 				55C91D4223AAF7A5001A8249 /* Main.storyboard in Resources */,
 				55C91D3F23AAF7A5001A8249 /* Preview Assets.xcassets in Resources */,
 				55C91D3C23AAF7A5001A8249 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		55C91D4723AAF7A6001A8249 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		55C91D5223AAF7A6001A8249 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,19 +195,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		55C91D4B23AAF7A6001A8249 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 55C91D3323AAF7A5001A8249 /* Netflix */;
-			targetProxy = 55C91D4A23AAF7A6001A8249 /* PBXContainerItemProxy */;
-		};
-		55C91D5623AAF7A6001A8249 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 55C91D3323AAF7A5001A8249 /* Netflix */;
-			targetProxy = 55C91D5523AAF7A6001A8249 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		55C91D4023AAF7A5001A8249 /* Main.storyboard */ = {
@@ -402,8 +334,6 @@
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Netflix/Supporting\\ Files",
-					"$(PROJECT_DIR)/Netflix/Supporting\\ Files",
 					"$(PROJECT_DIR)/Netflix/Supporting_Files",
 				);
 				INFOPLIST_FILE = Netflix/Info.plist;
@@ -432,9 +362,7 @@
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Netflix/Supporting\\ Files",
-					"$(PROJECT_DIR)/Netflix/Supporting\\ Files",
-					"$(PROJECT_DIR)/Netflix/Supporting_Files",
+					"$(PROJECT_DIR)/Netflix/Supporting_Files"
 				);
 				INFOPLIST_FILE = Netflix/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
